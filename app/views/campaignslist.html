@@ -1,1 +1,33 @@
-<p>This is the CampaignsList view.</p>
+<table class="table">
+    <thead>
+        <th>
+            {{ 'ID' | translate}}
+        </th>
+        <th>
+            {{ 'DESCRIPTION' | translate}}
+        </th>
+        <th>
+            {{ 'Active From' | translate}}
+        </th>
+        <th>
+            {{ 'Budget' | translate}}
+        </th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="campaign in campaigns"
+            ng-click="page(campaign['id'])">
+            <td>
+                {{campaign["id"]}}
+            </td>
+            <td>
+                {{campaign["Description"]}}
+            </td>
+            <td>
+                {{campaign["Active From"]}}
+            </td>
+            <td>
+                {{campaign["Budget"]}}
+            </td>
+        </tr>
+    </tbody>
+</table>
