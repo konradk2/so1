@@ -18,7 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'highcharts-ng'
   ])
   .config(function ($routeProvider, $translateProvider) {
     $routeProvider
@@ -35,7 +36,7 @@ angular
         controller: 'CampaignsDetailsCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/campaigns'
       });
 
     $translateProvider.translations('en', {

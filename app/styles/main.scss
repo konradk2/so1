@@ -2,3 +2,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+$odd: #dddddd;
+$hvr: #CDF4FF;
+
+.hover {
+
+  &:hover {
+    background-color: $hvr;
+  }
+  &:nth-child(odd) {
+    background-color: $odd;
+    &:hover {
+      background-color: $hvr;
+    }
+  }
+
+}

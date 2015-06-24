@@ -15,7 +15,8 @@
     </thead>
     <tbody>
         <tr ng-repeat="campaign in campaigns"
-            ng-click="page(campaign['id'])">
+            ng-click="page(campaign['id'])"
+            class="hover">
             <td>
                 {{campaign["id"]}}
             </td>

@@ -1,1 +1,19 @@
-<p>This is the CampaignsDetails view.</p>
+<div class="btn-group" role="group">
+    <button ng-click="getPeriod('day')"
+            type="button"
+            class="btn btn-default">
+        {{ 'day' | translate }}
+    </button>
+    <button ng-click="getPeriod('week')"
+            type="button"
+            class="btn btn-default">
+        {{ 'week' | translate }}
+    </button>
+    <button ng-click="getPeriod('month')"
+            type="button"
+            class="btn btn-default">
+        {{ 'month' | translate }}
+    </button>
+</div>
+
+<highchart id="chart1" config="chartConfig"></highchart>
